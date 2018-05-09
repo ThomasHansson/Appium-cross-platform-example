@@ -15,18 +15,15 @@ public class ContactSearchPageIOS implements ContactSearchPage {
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 
-    @FindBy(xpath = "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIASearchBar[1]")
-    public MobileElement searchFieldDefault;
+    @FindBy(xpath = "//XCUIElementTypeSearchField[@name=\"Search for contact\"]")
+    private MobileElement searchField;
 
-    @FindBy(xpath = "//UIAApplication[1]/UIAWindow[1]/UIASearchBar[1]")
-    public MobileElement searchFieldHighlighted;
-
-    @FindBy(xpath = "//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAStaticText[1]")
-    public MobileElement firstSearchResultName;
+    @FindBy(xpath = "//XCUIElementTypeOther[@name=\"Search results\"]/XCUIElementTypeCell/XCUIElementTypeStaticText")
+    private MobileElement firstSearchResultName;
 
     public void search(String name) {
-        searchFieldDefault.click();
-        searchFieldHighlighted.sendKeys(name);
+        searchField.click();
+        searchField.sendKeys(name);
     }
 
     public MobileElement getFirstSearchResult() {

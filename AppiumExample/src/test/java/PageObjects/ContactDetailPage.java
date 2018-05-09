@@ -5,5 +5,5 @@ package PageObjects;
  */
 public interface ContactDetailPage {
 
-    public String getContactName();
+    String getContactName();
 }

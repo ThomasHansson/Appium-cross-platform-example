@@ -16,7 +16,7 @@ public class ContactDetailPageAndroid implements ContactDetailPage {
     }
 
     @FindBy(id = "detail_name")
-    public MobileElement contactName;
+    private MobileElement contactName;
 
     public String getContactName() {
         return contactName.getText();

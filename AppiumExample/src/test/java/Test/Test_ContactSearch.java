@@ -2,6 +2,7 @@ package Test;
 
 import io.appium.java_client.MobileElement;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 
 /**

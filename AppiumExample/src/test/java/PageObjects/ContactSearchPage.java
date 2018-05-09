@@ -7,7 +7,7 @@ import io.appium.java_client.MobileElement;
  */
 public interface ContactSearchPage {
 
-    public void search(String name);
+    void search(String name);
 
-    public MobileElement getFirstSearchResult();
+    MobileElement getFirstSearchResult();
 }

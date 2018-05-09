@@ -16,10 +16,10 @@ public class ContactSearchPageAndroid implements ContactSearchPage {
     }
 
     @FindBy(id = "main_search")
-    public MobileElement searchField;
+    private MobileElement searchField;
 
     @FindBy(id = "name")
-    public MobileElement firstSearchResultName;
+    private MobileElement firstSearchResultName;
 
 
     public void search(String name) {
