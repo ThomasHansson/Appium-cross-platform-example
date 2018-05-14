@@ -3,6 +3,7 @@ package PageObjects;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import org.junit.Assert;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -18,7 +19,7 @@ public class ContactDetailPageIOS implements ContactDetailPage {
     @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"Contacts\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText[1]")
     private MobileElement contactName;
 
-    public String getContactName() {
-        return contactName.getText();
+    public void assertContactName(String expectedName) {
+        Assert.assertEquals(expectedName, contactName.getText());
     }
 }

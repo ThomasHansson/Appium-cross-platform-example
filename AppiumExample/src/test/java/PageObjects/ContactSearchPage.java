@@ -9,5 +9,7 @@ public interface ContactSearchPage {
 
     void search(String name);
 
-    MobileElement getFirstSearchResult();
+    void assertSearchResult(String expectedResult);
+
+    void navigateToSearchResultDetails();
 }

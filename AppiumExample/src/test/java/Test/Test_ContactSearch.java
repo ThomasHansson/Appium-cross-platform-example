@@ -16,13 +16,12 @@ public class Test_ContactSearch extends BaseTestClass {
         searchPage.search("Sara");
 
         //Verify result
-        MobileElement searchResult = searchPage.getFirstSearchResult();
-        Assert.assertEquals("Sara Alston", searchResult.getText());
+        searchPage.assertSearchResult("Sara Alston");
 
         //Navigate to detail page
-        searchResult.click();
+        searchPage.navigateToSearchResultDetails();
 
         //Verify that correct page is displayed
-        Assert.assertEquals("Sara Alston", detailPage.getContactName());
+        detailPage.assertContactName("Sara Alston");
     }
 }

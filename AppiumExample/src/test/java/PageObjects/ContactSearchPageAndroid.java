@@ -3,6 +3,7 @@ package PageObjects;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import org.junit.Assert;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -26,7 +27,12 @@ public class ContactSearchPageAndroid implements ContactSearchPage {
         searchField.sendKeys(name);
     }
 
-    public MobileElement getFirstSearchResult() {
-        return firstSearchResultName;
+    public void assertSearchResult(String expectedResult) {
+        Assert.assertEquals(expectedResult, firstSearchResultName.getText());
     }
+
+    public void navigateToSearchResultDetails() {
+        firstSearchResultName.click();
+    }
+
 }

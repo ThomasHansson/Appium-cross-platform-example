@@ -5,5 +5,5 @@ package PageObjects;
  */
 public interface ContactDetailPage {
 
-    String getContactName();
+    void assertContactName(String expectedName);
 }
