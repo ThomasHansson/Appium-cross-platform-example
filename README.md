@@ -3,7 +3,7 @@ An Appium (java) example project for cross platform testing of an Android and an
 
 Instructions:
 
-1. Download and setup Appium (see http://appium.io/getting-started.html)
+1. Download and setup Appium (see http://appium.io/docs/en/about-appium/getting-started/?lang=en)
 
 2. Import this project as a maven project in e.g. IntelliJ or Eclipse.
 
