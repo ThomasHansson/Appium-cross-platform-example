@@ -3,7 +3,7 @@ An Appium (java) example project for cross platform testing of an Android and an
 
 Instructions:
 
-1. Download and setup Appium (see http://appium.io/docs/en/about-appium/getting-started/?lang=en)
+1. Download and setup Appium (see http://appium.io/docs/en/about-appium/getting-started/)
 
 2. Import this project as a maven project in e.g. IntelliJ or Eclipse.
 
@@ -14,7 +14,7 @@ Instructions:
 
 Browserstack:
 
-It's also possible to run the tests against Browserstack (https:www.browserstack.com). To do this you need to do the following.
+It's also possible to run the tests against Browserstack (www.browserstack.com). To do this you need to do the following.
 
 1. Enter your Browserstack credentials in the AppiumController class (BS_USERNAME and BS_ACCESSKEY). 
 
