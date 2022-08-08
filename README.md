@@ -1,5 +1,5 @@
 # Appium-cross-platform-example
-An Appium (java) example project for cross platform testing of an Android and an iOS application
+An Appium (java) example project for cross platform testing of an Android and an iOS application (for more background see blogpost https://blog.jayway.com/2016/06/30/cross-platform-testing-example-android-ios-using-appium/)
 
 Instructions:
 
